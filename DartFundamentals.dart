@@ -1,8 +1,10 @@
 // Entry point of Program execution 'void main()'
+import 'dart:ffi';
+
 void main(){
   print('Namaste India'); // for printing anything like java,c,c++ .....
   print("Namaste India");
-
+// Integers in dart
   int a=21;
   num b=21;
   var c=21;
@@ -10,6 +12,7 @@ void main(){
   print(b);
   print(c);
 
+// float values in dart
   double aa=10;
   num bb=10.0;
   var cc=10.0;
@@ -17,4 +20,38 @@ void main(){
   print(bb);
   print(cc);
 
+// String in dart
+  String st="Ram Ram bhai";
+  String st1='Ram Ram Sir';
+ // String st2='Or bhai";   ' "" not possibel
+ // String st3="sum bhai';  "  ' not possibles
+ print(st);
+ print(st1);
+
+// boolean in dart
+ bool right=true;
+ bool wrong=false;
+ print(right);
+print(wrong);
+
+// check type in dart
+var whoIam;
+print(whoIam.runtimeType);
+var a1=10;
+print(a1.runtimeType);
+var a2=12.34;
+print(a2.runtimeType);
+var str1="azad";
+print(str1.runtimeType);
+
+// list in dart
+List<int>numbers=[1,2,3,4,5];
+var numbers1=[6,7,8,9,0];
+print(numbers1);
+print(numbers);
+print(numbers.runtimeType);
+List DiffTypeValues=[3,23.43,"shekhar",43];
+List<dynamic> DtV=["rahul",243.42,2,34.3];
+print(DiffTypeValues);
+print(DtV);
 }
