@@ -54,4 +54,12 @@ List DiffTypeValues=[3,23.43,"shekhar",43];
 List<dynamic> DtV=["rahul",243.42,2,34.3];
 print(DiffTypeValues);
 print(DtV);
+
+// Map in dart
+Map contacts={ "name":"shekhar", "LastName":'Mourya','Course':"B.tech"};
+Map<String,int>userData={"Mob.No":895878,"Age":20,"pincode":243301};
+Map<int,String>userProfil={1:"TshirtNo",10:"my fevorit number",20:"my age"};
+print(contacts);
+print(userData);
+print(userProfil);
 }
