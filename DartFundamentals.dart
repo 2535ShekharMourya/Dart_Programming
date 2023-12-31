@@ -10,7 +10,7 @@ void main(){
   var c=21;
   print(a);
   print(b);
-  print(c);
+  print("$c\n");
 
 // float values in dart
   double aa=10;
@@ -18,7 +18,7 @@ void main(){
   var cc=10.0;
   print(aa);
   print(bb);
-  print(cc);
+  print("$cc\n");
 
 // String in dart
   String st="Ram Ram bhai";
@@ -26,13 +26,13 @@ void main(){
  // String st2='Or bhai";   ' "" not possibel
  // String st3="sum bhai';  "  ' not possibles
  print(st);
- print(st1);
+ print("$st\n");
 
 // boolean in dart
  bool right=true;
  bool wrong=false;
  print(right);
-print(wrong);
+print("$wrong\n");
 
 // check type in dart
 var whoIam;
@@ -42,7 +42,7 @@ print(a1.runtimeType);
 var a2=12.34;
 print(a2.runtimeType);
 var str1="azad";
-print(str1.runtimeType);
+print("${str1.runtimeType}\n");
 
 // list in dart
 List<int>numbers=[1,2,3,4,5];
@@ -53,7 +53,7 @@ print(numbers.runtimeType);
 List DiffTypeValues=[3,23.43,"shekhar",43];
 List<dynamic> DtV=["rahul",243.42,2,34.3];
 print(DiffTypeValues);
-print(DtV);
+print("$DtV\n");
 
 // Map in dart
 Map contacts={ "name":"shekhar", "LastName":'Mourya','Course':"B.tech"};
@@ -63,7 +63,7 @@ print(contacts);
 print(userData);
 print(userProfil);
 print(contacts.keys);
-print(userData.values);
+print("${userData.values}\n");
 
 // String interpolation in dart
 String firstName='shekhar';
@@ -78,5 +78,20 @@ print(anyone);
 String mixall="$LastName  $anyone  $fullName";
 List list=[3,4,5,6,6];
 String mix=" ${list}";
-print(mix);
+print("$mixall\n");
+
+// functions in dart
+int sum=sumOfTwo(2,2);
+int mult=multTwo();
+print(mult);
+print(sum);
+}
+int sumOfTwo(int a,int b){
+  return a+b;
+}
+
+int multTwo(){
+  int a=3;
+  int b=3;
+  return a*b;
 }
