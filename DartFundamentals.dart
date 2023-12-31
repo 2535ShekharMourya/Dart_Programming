@@ -62,4 +62,21 @@ Map<int,String>userProfil={1:"TshirtNo",10:"my fevorit number",20:"my age"};
 print(contacts);
 print(userData);
 print(userProfil);
+print(contacts.keys);
+print(userData.values);
+
+// String interpolation in dart
+String firstName='shekhar';
+String LastName="Mourya";
+
+String fullName=firstName + LastName;
+print("my name is ${firstName.toUpperCase()}");
+print(fullName);
+String great="hello";
+String anyone=great + "bhai";
+print(anyone);
+String mixall="$LastName  $anyone  $fullName";
+List list=[3,4,5,6,6];
+String mix=" ${list}";
+print(mix);
 }
