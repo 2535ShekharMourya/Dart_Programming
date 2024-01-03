@@ -83,15 +83,23 @@ print("$mixall\n");
 // functions in dart
 int sum=sumOfTwo(2,2);
 int mult=multTwo();
+positionalFunctio(20,5.3,"shekhar","male",895878);
+//positionalFunctio(34.5, 20, 895878, "shekhar", "male")  The argument type 'int' can't be assigned to the parameter type 'String'
 print(mult);
 print(sum);
+
+
+
 }
-int sumOfTwo(int a,int b){
+
+int sumOfTwo(int a,int b){// with parameter and they are positional parameters
+// it means number of parameters and position and type of the parameter should be match
   return a+b;
 }
 
-int multTwo(){
+int multTwo(){// with no parameter no confussion
   int a=3;
   int b=3;
   return a*b;
 }
+positionalFunctio(int age, double hight,String name,String gender,int mobileNo){}
