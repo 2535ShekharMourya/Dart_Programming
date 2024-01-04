@@ -21,9 +21,21 @@ void main(){
   print("$cc\n");
 
 // String in dart
+String work="""
+Hi My Name is shekhar 
+and i am a Native android developer
+and i am a Java developer
+""";
+String work2='''
+hi my  name is azad
+and i'm a software enginer 
+
+''';
+print(work2);
+print(work);
   String st="Ram Ram bhai";
   String st1='Ram Ram Sir';
- // String st2='Or bhai";   ' "" not possibel
+ // String st2='Or bhai";   ' "" not possibel 
  // String st3="sum bhai';  "  ' not possibles
  print(st);
  print("$st\n");
@@ -79,6 +91,15 @@ String mixall="$LastName  $anyone  $fullName";
 List list=[3,4,5,6,6];
 String mix=" ${list}";
 print("$mixall\n");
+int num1=3;
+int num2=3;
+print("the sum of num1 and the sum of num2 is ${num1+num2}");
+String yt="neat roots";
+print("the youtube channel is "+ yt.toUpperCase());
+print(yt.contains("roots"));
+//String rowString=" HI & nice $ to # meet \ you / bro"; error
+String rowString=r" HI & nice $ to # meet \ you / bro";
+print(rowString);
 
 // functions in dart
 int sum=sumOfTwo(2,2);
@@ -87,6 +108,9 @@ positionalFunctio(20,5.3,"shekhar","male",895878);
 //positionalFunctio(34.5, 20, 895878, "shekhar", "male")  The argument type 'int' can't be assigned to the parameter type 'String'
 print(mult);
 print(sum);
+
+// Operators in dart
+print(2>5);
 
 
 
